@@ -1,11 +1,11 @@
 function main() {
   
   const verdicts = [
-    "Nei",
-    "Sannsynligvis ikke",
-    "Kanskje",
-    "Teknisk sett ja",
-    "Kun under tvang"
+    "Ja,",
+    "Sannsynligvis,",
+    "Kanskje,",
+    "Teknisk sett ikke,",
+    "Tvunget til å jobbe,"
 ];
 
 const evidence = [
