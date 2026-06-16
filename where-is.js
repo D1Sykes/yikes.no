@@ -24,4 +24,10 @@ function main() {
   document.getElementById("activities").textContent = activitiesWord;
 }
 
+function setupButton() {
+  const button = document.getElementById("refreshButton");
+  button.addEventListener("click", main);
+}
+
 main();
+setupButton();

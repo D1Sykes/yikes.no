@@ -5,8 +5,17 @@ header {
   padding: 1rem;
 }
 
-.home-button {
+.left-nav {
   justify-self: start;
+}
+
+.left-nav a:first-child {
+  padding-right: 0.5rem;
+  border-right: 1px solid #666;
+}
+
+.left-nav a:last-child {
+  padding-left: 0.5rem;
 }
 
 .location-link {
@@ -39,11 +48,11 @@ button {
 
 a {
   color: #8be9fd;
+  text-decoration: underline;
 }
 
-text-decoration: underline;
 a:visited {
-  color: #f8f8f2;
+  color: #8be9fd;
 }
 
 a:hover {
