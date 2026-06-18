@@ -11,7 +11,14 @@ function beerReduce() {
   const currentValue = Number(beerCounter.textContent);
   const newValue = currentValue - 1;
 
-  beerCounter.textContent = newValue;
+  if (newValue <= 0) {
+    beerCounter.textContent = 0;
+    document.getElementById("beerWarning").textContent = "DET ER TOMT FOR ØL!";
+  }
+  else {
+    beerCounter.textContent = newValue;
+    document.getElementById("beerWarning").textContent = "";
+  }
 }
 
 function setupButton() {
