@@ -22,6 +22,12 @@ header {
   justify-self: end;
 }
 
+.sbu-link {
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+}
+
 header h1 {
   justify-self: center;
   margin: 0;
@@ -73,4 +79,104 @@ header a:hover {
 
 .where-is-page {
   text-align: center;
+}
+
+/* ---------- SIØ-siden ---------- */
+
+.sbu-page main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.article-layout {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.sbu-content {
+  text-align: left;
+}
+
+.sbu-content h2 {
+  text-align: center;
+  margin-top: 2rem;
+  border-bottom: 2px solid #444;
+  padding-bottom: 0.3rem;
+}
+
+.sbu-content p,
+.sbu-content li {
+  line-height: 1.6;
+}
+
+.sbu-content ul {
+  list-style-position: inside;
+}
+
+.article-meta {
+  text-align: center;
+  color: #b0b0b0;
+  font-size: 0.9rem;
+}
+
+.sbu-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.sbu-content th,
+.sbu-content td {
+  border: 1px solid #555;
+  padding: 0.75rem;
+}
+
+.sbu-content th {
+  background-color: #2d3046;
+}
+
+.sbu-content tr:nth-child(even) {
+  background-color: #2a2c40;
+}
+
+.fact-box {
+  background-color: #2d3046;
+  border: 1px solid #555;
+  border-radius: 8px;
+  padding: 1rem;
+  height: fit-content;
+  position: sticky;
+  top: 2rem;
+  text-align: left;
+}
+
+.fact-box h2 {
+  margin-top: 0;
+  border-bottom: 2px solid #444;
+  padding-bottom: 0.5rem;
+  text-align: left;
+}
+
+.fact-box p {
+  margin: 0.75rem 0;
+}
+
+.sbu-page footer {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+@media (max-width: 800px) {
+  .article-layout {
+    display: block;
+  }
+
+  .fact-box {
+    margin-top: 2rem;
+    position: static;
+  }
 }
