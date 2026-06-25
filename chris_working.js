@@ -1,30 +1,15 @@
 function main() {
-  
-  const verdicts = [
-    "Ja,",
-    "Sannsynligvis,",
-    "Kanskje,",
-    "Teknisk sett ikke,",
-    "Tvunget til å jobbe,"
-];
-
-const evidence = [
-    "ble observert ved kaffemaskinen.",
-    "skylder på sykdom.",
-    "var i møte om et møte.",
-    "sendte én e-post og kalte det en produktiv dag.",
-    "har åpnet Excel."
-];
-
   let verdictsAmount = Math.floor(Math.random() * verdicts.length);
   let evidenceAmount = Math.floor(Math.random() * evidence.length);
+  let confidenceAmount = Math.floor(Math.random() * confidence.length);
 
   let verdictsWord = verdicts[verdictsAmount];
   let evidenceWord = evidence[evidenceAmount];
+  let confidenceWord = confidence[confidenceAmount];
 
   document.getElementById("verdicts").textContent = verdictsWord;
   document.getElementById("evidence").textContent = evidenceWord;
-
+  document.getElementById("confidence").textContent = confidenceWord;
 }
 
 function setupButton() {
